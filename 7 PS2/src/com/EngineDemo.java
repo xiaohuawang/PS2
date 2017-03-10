@@ -2,7 +2,7 @@ package com;
 
 public class EngineDemo {
 
-	public static void main(String[] args) throws NoEngineExistException {
+	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
 		System.out.println("wozhishi yizhigou");
 		EngineInventory inv=new EngineInventory();
@@ -43,9 +43,19 @@ public class EngineDemo {
 		System.out.println(inv.addEngine(e3));
 		System.out.println(inv.addEngine(e4));
 		
-		System.out.println(inv.enginesWithMileageGreaterThan(20));
+		try {
+			System.out.println(inv.enginesWithMileageGreaterThan(20));
+		} catch (NoEngineExistException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		System.out.println(inv.enginesWithMileageGreaterThan(50));
+		try {
+			System.out.println(inv.enginesWithMileageGreaterThan(50));
+		} catch (NoEngineExistException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	
