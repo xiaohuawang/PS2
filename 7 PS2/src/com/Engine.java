@@ -3,15 +3,15 @@ package com;
 public abstract class Engine {
 
 	int id;
-	double volumn;
+	double volume;
 	double fuelCapacity;
 	char fuelType;
 	
 	public abstract double getMileage();
 	
-	public Engine(int id, double volumn, double fuelCapacity, char fuelType){
+	public Engine(int id, double volume, double fuelCapacity, char fuelType){
 		this.id=id;
-		this.volumn=volumn;
+		this.volume=volume;
 		this.fuelCapacity=fuelCapacity;
 		this.fuelType=fuelType;
 	}
@@ -25,11 +25,11 @@ public abstract class Engine {
 	}
 
 	public double getVolumn() {
-		return volumn;
+		return volume;
 	}
 
 	public void setVolumn(double volumn) {
-		this.volumn = volumn;
+		this.volume = volumn;
 	}
 
 	public double getFuelCapacity() {
