@@ -6,7 +6,7 @@ public class FourStroke extends Engine {
 		super(id, volume, fuelCapacity, fuelType);
 	}
 
-	@Override
+	
 	public double getMileage() {
 		double mileage=0.0;
 		if(fuelType=='g'){
